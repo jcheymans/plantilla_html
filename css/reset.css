@@ -1,0 +1,19 @@
+
+h1,h2,h3,h4,h5,h6, 
+p,span,a,div,td,li,body 
+strong,em,i {
+	margin: 0; padding: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul {
+	margin:0;padding:0;
+}
+ul li {
+	margin:0;padding:0;
+	list-style: none;
+}

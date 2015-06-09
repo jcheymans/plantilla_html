@@ -1,0 +1,150 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> (quitar zoom) -->
+    
+	<meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    
+    <title>Plantilla 1</title>
+	
+	<!-- ESTILOS IMPORTANTES -->
+	<link href="../css/normalize.css" rel="stylesheet"><!-- Reset de estilos -->
+	<link href="../css/reset.css" rel="stylesheet"><!-- Reset de estilos -->
+	
+	<!-- PLUGINS -->
+	<link href="../css/fontastic.css" rel="stylesheet" type="text/css"><!-- Iconos fuentes -->
+	<link href="../css/hover-min.css" rel="stylesheet" type="text/css"><!-- Hover effects -->
+	<link href="../css/snippets.css" rel="stylesheet" type="text/css"><!-- Snippets Heymans -->
+	<link href="../css/heynav.css" rel="stylesheet" type="text/css"><!-- Snippets Heymans -->
+	
+	<!-- MIS ESTILOS -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css"><!-- Estilos sitio -->
+	<link rel="stylesheet" type="text/css" href="../css/media-queries.css"><!-- Estilos sitio media-queries -->
+    
+	<!-- MODERNIZR (tiene que llamarse antes del body) -->
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    
+    <style>
+    	
+    	.header {
+    		background-color: #ddd;
+    		min-height: 80px;
+    	}
+    	
+		@media only screen and (max-width: 768px) {
+		    
+		    .main {
+		    	width: auto;
+		    	padding: 0;
+		    }
+		}
+    	
+    </style>
+    
+    
+</head>
+<body>
+	
+	<header class="header">
+		<div class="main">
+			
+			<span class="icon-list menu-btn mobile"> </span>
+			
+			<nav id="nav" class="heynav">
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Nosotros</a></li>
+					<li><a href="#">Promociones</a></li>
+					<li>
+						<a href="#">Beneficios</a>
+						<ul>
+							<li><a href="#">Todas las categorías</a></li>
+							<li><a href="#">Salud y belleza</a></li>
+							<li><a href="#">Entretenimiento</a></li>
+							<li><a href="#">Gastronomía</a></li>
+							<li><a href="#">Servicios varios</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Eventos</a></li>
+					<li><a href="#">Galería</a></li>
+					<li><a href="#">Solicitar tarjeta</a></li>
+				</ul>
+			</nav><!-- .nav.principal -->
+			
+			
+		</div><!-- .main -->
+	</header><!-- .header -->
+	
+	<section style="">
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+		<p>PRUEBA</p>
+	</section>
+	
+	
+	
+	<!-------------- JAVASCRIPT -------------------->
+	
+	<!-- SCRIPTS IMPORTANTES -->
+    <script src="../js/selectivizr-min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+	<!--<script src="../js/bootstrap.min.js"></script>-->
+	
+	<!-- PLUGINS -->
+	<script src="../js/heynav.js"></script>
+	
+	<script>
+	
+		$(document).ready(function(){
+			$("#nav").heynav({
+				breakpoint: 768,
+				slide: true, // TRUE si va a ser slide
+				showSpeed: 200, // Velocidad con la que se despliega el menu mobile
+				menuBtn_selector: ".menu-btn", // Boton que despliega el menu mobile
+				absolute: false // RECORDATORIO: Si es TRUE, el div contenedor (header) debe tener un height fluido para que funcione como se supone
+				
+			});
+		});
+	
+	</script>
+	
+	<!-- SCRIPTS -->
+	<script src="../js/snippets.js"></script><!-- Scripts y funciones varias -->
+	<script src="../js/custom/script.js"></script><!-- Mis scripts -->
+	
+</body>
+</html>

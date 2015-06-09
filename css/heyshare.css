@@ -1,0 +1,150 @@
+
+
+.hey-share {
+	
+}
+
+.hey-share-container {
+	position: relative;
+	display: inline-block;
+	/*width: 300px;*/
+	font-size: 0;
+}
+.hey-share-container .hey-share-btn {
+	position: relative;
+	z-index: 1;
+	cursor: default;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background: url("heyshare_icons/share-black.png") 50% 50% no-repeat;
+	background-size: 80% auto;
+}
+.hey-share-container .hey-botones-container {
+	display: none;
+	position: absolute;
+}
+.hey-share-container.hey-hover:hover .hey-botones-container {
+	display: inline-block;
+	display: block;
+	float: left;
+}
+.hey-share-container .hey-botones-container  .hey-botones {
+	display: inline-block;
+	background-color: #fff;
+	position: relative;
+}
+
+/* POSITION RIGHT */
+.hey-share-container.right .hey-botones-container {
+	top: 0;
+	left: 0;
+	padding-left: 38px;
+}
+.hey-share-container.right.big .hey-botones-container {
+	padding-left: 48px;
+}
+.hey-share-container.right.small .hey-botones-container {
+	padding-left: 28px;
+}
+
+/* POSITION LEFT */
+.hey-share-container.left .hey-botones-container {
+	top: 0;
+	right: 0;
+	padding-right: 38px;
+}
+.hey-share-container.left.big .hey-botones-container {
+	padding-right: 48px;
+}
+.hey-share-container.left.small .hey-botones-container {
+	padding-right: 48px;
+}
+
+/* POSITION TOP */
+.hey-share-container.top .hey-botones-container {
+	bottom: 0px;
+	left: 50%;
+	padding-bottom: 38px;
+}
+
+/* POSITION BOTTOM */
+.hey-share-container.bottom .hey-botones-container {
+	top: 0px;
+	left: 50%;
+	padding-top: 38px;
+}
+
+/*
+.hey-share-container.right .hey-botones {
+	top:0;
+	margin-left: 40px;
+}
+.hey-share-container.left .hey-botones {
+	top:0;
+	margin-right: 40px;
+}*/
+
+
+
+/*
+.hey-share-container .hey-botones::before {
+	content: "";
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	margin-top: -10px;
+	display: block;
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	border-right: 10px solid #ffffff; 
+}*/
+
+
+.hey-share-container .hey-botones .hey-bot {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	background-size: 100% auto;
+	cursor: pointer;
+	
+	opacity: 1;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+.hey-share-container .hey-botones .hey-bot:hover {
+	opacity: 0.8;
+}
+
+.hey-bot.facebook {
+	background-image: url("heyshare_icons/cuad_color/facebook.png");
+}
+.hey-bot.twitter {
+	background-image: url("heyshare_icons/cuad_color/twitter.png");
+}
+.hey-bot.instagram {
+	background-image: url("heyshare_icons/cuad_color/instagram.png");
+}
+.hey-bot.google {
+	background-image: url("heyshare_icons/cuad_color/google.png");
+}
+.hey-bot.pinterest {
+	background-image: url("heyshare_icons/cuad_color/pinterest.png");
+}
+
+/*
+<a href="#" class="hey-share">Share</a>
+		<div class="hey-share-container">
+			<span class="hey-share-btn"></span>
+			<div class="hey-botones">
+				<span class="hey-bot facebook"></span>
+				<span class="hey-bot twitter"></span>
+				<span class="hey-bot instagram"></span>
+				<span class="hey-bot google"></span>
+				<span class="hey-bot pinterest"></span>
+			</div>
+		</div>*/

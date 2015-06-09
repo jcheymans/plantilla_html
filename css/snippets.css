@@ -1,0 +1,325 @@
+/*  SNIPPETS VARIOS:
+ 
+	opacity:0.5;
+	filter:alpha(opacity=50);
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box; 
+	
+	-webkit-border-radius: 	0px;
+	-moz-border-radius: 	0px;
+	border-radius: 			0px;
+	
+	text-shadow:1px 1px 1px #ccc;
+	
+	-moz-box-shadow: 	0px 4px 5px #888;
+	-webkit-box-shadow: 0px 4px 5px #888;
+	box-shadow: 		0px 4px 5px #888;
+*/
+
+
+
+/* MIERDAS VARIAS */
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+	font: inherit;
+	color: inherit;
+}
+strong {
+	font: inherit;
+	color: inherit;
+	font-weight: bold;
+}
+/* Para tener un máximo de ancho del contenido */
+.main {
+	position: relative;
+	width: 1100px;
+	padding: 0 20px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix {
+	clear:both;
+}
+hr {
+	border:0;padding:0;margin:0;
+	display: block;
+	width: 100%;
+	margin: 20px auto;
+	height: 1px;
+	background-color: #ddd;
+	border-bottom: 1px solid #fff;
+}
+.truncate { /* clase para q salgan 3 puntos si se corta el texto */
+    width: 250px;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+
+
+
+/* TITULOS IMAGENES DE FONDO */
+.titulo-bg {
+	text-indent: -9999px;
+	display: block;
+	width: 100px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: auto 100%;
+	position: relative;
+}
+
+/* FONDO OVERLAY */
+.overlay {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 44;
+}
+.overlay.negro {
+	background-color: rgba(0,0,0,0.8);
+}
+.overlay.blanco {
+	background-color: rgba(255,255,255,0.8);
+}
+
+/* VISOR O VENTANA TIPO MODAL (aca mejor usar VENTANAS) */
+.visor {
+	position: absolute;
+	width: 600px;
+	background-color: #fff;
+	top: 10%;
+	margin-left: -300px;
+	left: 50%;
+	padding: 20px 40px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	z-index: 75;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	-webkit-border-radius: 	250px;
+	-moz-border-radius: 	250px;
+	border-radius: 			250px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box; 
+}
+
+
+
+
+/* Esta clase se la pongo a todos los contenedores de iconos */
+/* Automáticamente agarra al icono y lo hace del font size ideal, asi no se ve defasado */
+.icon-holder *::before {
+	font-size: 1.3em;
+	top: 0.23em;
+	position: relative;
+}
+.icon-holder [class^="icon-"] {
+	font-size: inherit;
+}
+.icon-holder:hover {
+	text-decoration: none;
+}
+
+
+
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid black;
+}
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #f00;
+}
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid green;
+}
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	border-right:10px solid blue; 
+}
+
+
+
+
+/* FORMS */
+.field {
+	border: 1px solid #d0d0d0;
+	background-color: #fff;
+	padding: 10px;
+}
+.field:focus {
+	border-color: #bbb;
+}
+.form1 {
+	position: relative;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box; 
+}
+.form1 .fila {
+	width: 100%;
+	position: relative;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box; 
+	margin-bottom: 20px;
+}
+.form1 .fila .field {
+	width: 44%;
+	width: calc(50% - 12px); /* 12 por los bordes, si no fuera 10 (la mitad del margen de en medio) */
+	margin-right: 20px;
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box; 
+}
+.form1 .fila .field:last-child {
+	margin-right: 0;
+}
+.form1 .fila .field:first-child:last-child {
+	width: 100%;
+	margin-right: 0;
+}
+/* Aca falta hacer la parte de media queries y tambien para checkboxes, select combos, etc... ABarcar TODAS las posibilidaes en un formulario */
+
+
+
+div.styled { 
+	display: inline-block;
+	position: relative;
+    overflow:hidden; /* this hides the select's drop button */
+    padding:0; 
+    margin:0; 
+	font-size: 14px;
+    /*background: white url(formelements-select.png) no-repeat bottom right; */
+    /* this is the new drop button, in image form */
+    width:12em; 
+    /*border-radius:2px; */
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.2); */
+    border: solid 1px #ccc; 
+    padding: 1px;
+    background-color: #fff;
+    
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box; 
+}
+div.styled select { 
+	position: relative;
+	z-index: 1;
+    width:120% /* this percentage effectively extends the drop down button out of view */; 
+    background-color:transparent /* this hides the select's background making any styling visible from the div */; 
+    background-image:none; 
+    -webkit-appearance: none /* this is required for Webkit browsers */; 
+    border:none; 
+    box-shadow:none; 
+    padding:0.3em 0.5em; /* padding should be added to the select, not the div */
+}
+div.styled::after {
+	z-index: 0;
+	content: "\e039";
+	position: absolute;
+	right: 8px;
+	top: 40%;
+	margin-top: -0.5em;
+	cursor: default;
+	font-family: "general-a" !important;
+	font-style: normal !important;
+  	font-weight: normal !important;
+  	font-variant: normal !important;
+  	text-transform: none !important;
+  	speak: none;
+  	line-height: 1;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* BOTONES */
+.btn, .btn:visited {
+    /*border-radius: 5px;*/
+ 	border: 0;
+    padding: 12px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    /*margin: 20px;*/
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+.btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+    outline: none;
+    text-decoration: none;
+}
+.btn:hover {
+    text-decoration: none;
+}
+.btn:focus {
+	outline: none;
+}
+.btn.peq {
+  	padding: 10px 35px;
+  	font-size: 16px;
+}
+.azul, .azul:focus {
+    background-color: #005475;
+    box-shadow: 0px 5px 0px 0px #004661;
+    color: #fff;
+}
+.azul:hover {
+    background-color: #005b77;
+}
+
+.azul-claro, .azul-claro:focus {
+    background-color: #0090cb;
+    box-shadow: 0px 5px 0px 0px #007cad;
+    color: #fff;
+}
+.azul-claro:hover {
+    background-color: #0598c6;
+}
+
+
+
+
+
+
+

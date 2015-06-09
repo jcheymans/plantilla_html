@@ -1,0 +1,23 @@
+/* Estilos responsive del sitio */
+
+
+@media only screen and (max-width: 992px) {
+	
+}
+
+@media only screen and (max-width: 768px) {
+	
+}
+
+
+/* CSS for high-resolution devices (RETINA) */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
+    
+    .icons {
+        background-image: url(icon-sprite-2x.png);
+        background-size: 200px 100px;
+    }
+    
+}
+
+

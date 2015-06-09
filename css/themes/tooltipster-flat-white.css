@@ -1,0 +1,14 @@
+.tooltipster-flat-white {
+	border-radius: 0px; 
+	/*border: 1px solid #cccccc;*/
+	border:0;
+	background: #fff;
+	color: #444;
+}
+.tooltipster-flat-white .tooltipster-content {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 8px 10px;
+	max-width: 400px;
+}

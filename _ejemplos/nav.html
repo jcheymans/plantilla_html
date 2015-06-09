@@ -1,0 +1,296 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> (quitar zoom) -->
+    
+	<meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    
+    <title>Plantilla 1</title>
+	
+	<!-- ESTILOS IMPORTANTES -->
+	<link href="../css/normalize.css" rel="stylesheet"><!-- Reset de estilos -->
+	<link href="../css/reset.css" rel="stylesheet"><!-- Reset de estilos -->
+	
+	<!-- PLUGINS -->
+	<!--<link href="../css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap core CSS -->
+	<!--<link href="../css/bootstrap-theme.min.css" rel="stylesheet"><!-- Bootstrap theme -->
+	<link href="../css/fontastic.css" rel="stylesheet" type="text/css"><!-- Iconos fuentes -->
+	<link href="../css/hover-min.css" rel="stylesheet" type="text/css"><!-- Hover effects -->
+	<link href="../css/snippets.css" rel="stylesheet" type="text/css"><!-- Snippets Heymans -->
+	
+	<!-- MIS ESTILOS -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css"><!-- Estilos sitio -->
+	<link rel="stylesheet" type="text/css" href="../css/media-queries.css"><!-- Estilos sitio media-queries -->
+    
+	<!-- MODERNIZR (tiene que llamarse antes del body) -->
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+    	
+    	.header .nav {
+			position: relative;
+			top: 15px;
+		}
+		.header .nav > ul > li {
+			display: inline-block;
+			margin: 0 5px;
+			border-bottom: 5px solid #fff;
+		}
+		.header .nav > ul > li > a {
+			font-size: 12px;
+			display: inline-block;
+			padding: 20px 0px 25px;
+			text-transform: uppercase;
+			color: #555;
+			position: relative;
+		}
+		.header .nav > ul > li:hover, .header .nav > ul > li.sel {
+			border-color: #0090cb;
+			color: #000;
+		}
+		.header .nav > ul > li:hover a, .header .nav > ul > li.sel a {
+			text-decoration: none;
+		}
+		.header .nav > ul > li:hover > ul {
+			display: block;
+		}
+		.header .nav li > ul { /* Subnavs */
+			display: none;
+			position: absolute;
+			top: 60px;
+			padding-top: 5px;
+			z-index: 10;
+		}
+		.header .nav li > ul li {
+			display: block;
+		}
+		.header .nav li > ul li a {
+			display: block;
+			color: #fff;
+			padding: 11px 22px 13px 13px;
+			font-size: 14px;
+			background-color: #1F2224;
+		}
+		.header .nav li > ul li a:hover {
+			text-decoration: none;
+			background-color: #393C3F;
+		}
+		
+		.header .nav.principal {
+			float: right;
+		}
+		
+		.header .menu-btn {
+			cursor: pointer;
+			font-size: 25px;
+			padding: 5px;
+			display: none;
+			position: absolute;
+			top: 20px;
+			right: 10px;
+		}
+    	
+    	
+		@media only screen and (max-width: 1100px) {
+		    
+		    .main {
+		    	width: auto;
+		    	padding: 0;
+		    }
+		    
+			.header .menu-btn {
+				display: block;
+			}
+		    
+		    /* NAV */
+			.header .nav.principal {
+				width: 100%;
+				margin: 0;
+				top: 80px;
+				display: none;
+				border-bottom: 4px solid #ccc;
+			}
+			.header .nav > ul > li:first-child {
+				border-top: 1px solid #ddd;
+			}
+			.header .nav > ul > li {
+				display: block;
+				margin: 0;
+				border: 0;
+				border-bottom: 1px solid #ddd;
+			}
+			.header .nav > ul > li:hover {
+				border-color: #ddd;
+			}
+			.header .nav > ul > li:hover > ul {
+				display: none;
+			}
+			.header .nav > ul > li > a {
+				padding: 18px;
+				font-size: 15px;
+				text-align: center;
+				display: block;
+				background-color: #eee;
+			}
+			.header .nav > ul > li > a:hover {
+				background-color: #f3f3f3;
+				color: #000;
+			}
+			.header .logo {
+				left: 10px;
+				top: 6px;
+			}
+			
+			.header .nav li > ul { /* subnav */
+			    position: relative;
+			    top: 0px;
+			    padding-top: 0px;
+			}
+			.header .nav li > ul li a {
+				background-color: #DDD;
+				color: #606060;
+				text-align: center;
+				border-bottom: 1px solid #d2d2d2;
+				padding: 17px 0;
+			}
+			.header .nav li > ul li a:hover {
+				background-color: #e5e5e5;
+			}
+			
+		}
+    	
+    </style>
+    
+</head>
+<body>
+	
+	<header class="header">
+		<div class="main">
+			
+			<span class="icon-list menu-btn mobile"> </span>
+			<nav class="nav principal">
+				<ul>
+					<li><a href="inicio.html">Inicio</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="promociones.html">Promociones</a></li>
+					<li>
+						<a href="beneficios.html">Beneficios</a>
+						<ul>
+							<li><a href="beneficios.html">Todas las categorías</a></li>
+							<li><a href="beneficios.html">Salud y belleza</a></li>
+							<li><a href="beneficios.html">Entretenimiento</a></li>
+							<li><a href="beneficios.html">Gastronomía</a></li>
+							<li><a href="beneficios.html">Servicios varios</a></li>
+							<li><a href="beneficios.html">Entretenimiento</a></li>
+							<li><a href="beneficios.html">Viajando con el club</a></li>
+						</ul>
+					</li>
+					<li><a href="eventos.html">Eventos</a></li>
+					<li><a href="galeria.html">Galería</a></li>
+					<li><a href="solicitar.html">Solicitar tarjeta</a></li>
+				</ul>
+			</nav><!-- .nav.principal -->
+			
+			<div class="clearfix"> </div>
+		</div><!-- .main -->
+	</header><!-- .header -->
+	
+	
+	<script>
+		$(document).ready(function(){
+			setMenu();
+		});
+		$(window).resize(function(){
+			setMenu();
+		});
+		
+		// DESPUES ESTO HACERLO UN PLUGIN MEJOR (con un css aparte y un theme aparte para cambiarle estilos esteticos)
+		function setMenu(){
+			
+			var breakpoint = 1100;
+			var slideSpeed = 200;
+			var menuBtn_selector = ".menu-btn";
+			var li_selector = ".header .nav > ul > li";
+			var nav = ".header .nav.principal";
+			var subnavs = ".header .nav li > ul";
+			
+			
+			if(!w) var w = $(window).width();
+			
+			if(w > breakpoint){
+				$(nav).show();
+				$(subnavs).hide();
+			}
+			
+			$(menuBtn_selector).unbind("click").click(function(){
+				toggle(nav);
+			});
+			
+			$(li_selector).each(function(){
+				if($(this).find("ul").length > 0){
+					
+					var ul = $(this).find("ul"); 
+					var a = $(this).children("a");
+					
+					a.unbind("click");
+					if(w > breakpoint){
+						ul.css("display","");
+					} else {
+						a.click(function(e){
+							e.preventDefault();
+							toggle(ul);
+						});
+					}
+				}
+			});
+			
+			function toggle(selector){
+				if($(selector).is(":visible")){
+					$(selector).slideUp(slideSpeed);
+				} else {
+					$(selector).slideDown(slideSpeed);
+				}
+			}
+		}
+		
+	</script>
+	
+	<!-------------- JAVASCRIPT -------------------->
+	
+	<!-- SCRIPTS IMPORTANTES -->
+    <script src="../js/selectivizr-min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+	<!--<script src="../js/bootstrap.min.js"></script>-->
+	
+	<!-- PLUGINS -->
+	<script src="../js/icheck.min.js"></script><!-- Custom checboxes y radios | http://fronteed.com/iCheck -->
+	<!--<script src="../js/svg.js"></script><!-- Custom checboxes y radios | http://fronteed.com/iCheck -->
+	<!--<script src="../js/jquery.tooltipster.min.js"></script><!-- Tooltips -->
+	<!--<script src="../js/wow.min.js"></script><!-- Tooltips -->
+	<!--<script src="../js/jquery.jscroll.min.js"></script><!-- infinite scroll-->
+	<!--<script src="../js/jquery.lazyload.min.js"></script><!-- lazy load -->
+	<!--<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script><!-- custom scrollbars -->
+	<!--<script src="../js/heyshare.js"></script><!-- custom scrollbars -->
+	
+	<!-- SCRIPTS -->
+	<script src="../js/snippets.js"></script><!-- Scripts y funciones varias -->
+	<script src="../js/custom/script.js"></script><!-- Mis scripts -->
+	
+</body>
+</html>

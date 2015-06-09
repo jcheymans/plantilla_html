@@ -1,0 +1,142 @@
+
+/* MENU BTN */
+.header .menu-btn {
+	cursor: pointer;
+	font-size: 25px;
+	padding: 5px;
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+
+/* HEYNAV PRINCIPAL Y SUS LIs Y As */
+.heynav {
+	position: relative;
+	top: 15px;
+}
+.heynav > ul > li {
+	display: inline-block;
+	margin: 0 5px;
+	border-bottom: 5px solid #ddd;
+}
+.heynav > ul > li > a {
+	font-size: 12px;
+	display: inline-block;
+	padding: 20px 0px 25px;
+	text-transform: uppercase;
+	color: #555;
+	position: relative;
+}
+.heynav > ul > li:hover, .heynav > ul > li.sel {
+	border-color: #0090cb;
+	color: #000;
+}
+.heynav > ul > li:hover a, .heynav > ul > li.sel a {
+	text-decoration: none;
+}
+.heynav > ul > li:hover > ul {
+	display: block;
+}
+
+/* SUBNAVS */
+.heynav li > ul {
+	display: none;
+	position: absolute;
+	top: 60px;
+	padding-top: 5px;
+	z-index: 10;
+}
+.heynav li > ul li {
+	display: block;
+}
+.heynav li > ul li a {
+	display: block;
+	color: #fff;
+	padding: 11px 22px 13px 13px;
+	font-size: 14px;
+	background-color: #1F2224;
+}
+.heynav li > ul li a:hover {
+	text-decoration: none;
+	background-color: #393C3F;
+}
+
+@media only screen and (max-width: 768px) {
+    
+	/* MENU BTN */
+	.header .menu-btn {
+		display: block;
+	}
+    
+    /* HEYNAV PRINCIPAL */
+	.heynav {
+		width: 100%;
+		margin: 0;
+		top: 80px;
+		display: none;
+		border-bottom: 4px solid #ccc;
+	}
+	.heynav.heynav-absolute {
+		position: absolute;
+	}
+	
+	.heynav > ul > li:first-child {
+		border-top: 1px solid #ddd;
+	}
+	.heynav > ul > li {
+		display: block;
+		margin: 0;
+		border: 0;
+		border-bottom: 1px solid #ddd;
+	}
+	.heynav > ul > li:hover {
+		border-color: #ddd;
+	}
+	.heynav > ul > li > a {
+		padding: 18px;
+		font-size: 15px;
+		text-align: center;
+		display: block;
+		background-color: #eee;
+	}
+	.heynav > ul > li > a:hover {
+		background-color: #f3f3f3;
+		color: #000;
+	}
+	
+	
+	/* SUBNAVS */
+	
+	.heynav > ul > li:hover > ul {
+		display: none;
+	}
+	.header .logo {
+		left: 10px;
+		top: 6px;
+	}
+	
+	.heynav li > ul {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 0px;
+	}
+	.heynav li > ul {
+	    position: relative;
+	    top: 0px;
+	    padding-top: 0px;
+	}
+	
+	
+	.heynav li > ul li a {
+		background-color: #DDD;
+		color: #606060;
+		text-align: center;
+		border-bottom: 1px solid #d2d2d2;
+		padding: 17px 0;
+	}
+	.heynav li > ul li a:hover {
+		background-color: #e5e5e5;
+	}
+	
+}
