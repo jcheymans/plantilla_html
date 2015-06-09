@@ -2,6 +2,8 @@
 
 (function($){
 	
+	if (window.location.hash == '#close_window') window.close();
+	
 	$.fn.heyshare = function(options) {
 	    
 	    // DEFAULT SETTINGS
@@ -124,6 +126,14 @@
 	    		});
 	    	}
 	    	
+	    	// FUNCIONAMIENTO DIALOG
+	    	
+	    	botones.find(".hey-bot").click(function(e){
+	    		e.preventDefault();
+	    		var url = $(this).attr("href");
+	    		window.open(url,'','width=600,height=400');
+	    	});
+	    	
 	    	
 	    	// AGREGO EL HTML
 	    	container.addClass(settings.size);
@@ -132,16 +142,17 @@
 	    	
 	    	elem.replaceWith(container);
 	    	
+	    	
 	    	// CONFIGURACION ADICIONAL DE FACEBOOK (con Facebook API)
 	    	if(typeof FB != "undefined"){
 	            
-		    	container.find(".facebook").on('click', function(e){
+		    	container.find(".facebook").unbind("click").on('click', function(e){
 	            	e.preventDefault();
 	            	
 	            	var url = $(this).attr("href");
 	            	var caption = elem.data("caption");
 	            	var picture = elem.data("picture");
-	            	var name = elem.data("name");
+	            	var name = elem.data("title");
 	            	var description = elem.data("description");
 	            	
 					FB.ui({
