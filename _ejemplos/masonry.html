@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="author" content="jcheymans.com">
+    <link rel="icon" href="favicon.ico">
+    
+    <title>Masonry</title>
+	
+	<!-- ESTILOS IMPORTANTES -->
+	<link href="../css/normalize.css" rel="stylesheet"><!-- Reset de estilos -->
+	<link href="../css/reset.css" rel="stylesheet"><!-- Reset de estilos -->
+	
+	<!-- PLUGINS -->
+	<link href="../css/snippets.css" rel="stylesheet" type="text/css"><!-- Snippets Heymans -->
+	
+	<!-- MIS ESTILOS -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css"><!-- Estilos sitio -->
+	<link rel="stylesheet" type="text/css" href="../css/media-queries.css"><!-- Estilos sitio media-queries -->
+    
+	<!-- MODERNIZR (tiene que llamarse antes del body) -->
+    <script src="../js/modernizr-2.8.3.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/masonry.min.js"></script><!-- custom scrollbars -->
+    
+</head>
+<body>
+    
+    
+    <script>
+        $(document).ready(function(){
+            $('.grid').masonry({
+              itemSelector: '.grid-item',
+              columnWidth: 200,
+              gutter: 40,
+              isFitWidth: true
+
+            });
+        });
+    </script>
+    
+    <style>
+        
+        .grid-cont {
+            margin: 0 auto;
+            /*max-width: 990px;*/
+            background-color: #444;
+        }
+        .grid {
+            padding: 20px 0;
+            margin: 40px auto;
+            background-color: black;
+        }
+        .grid-item {
+            background-color: #ccc;
+            margin-bottom: 40px;
+            
+            width: 200px;
+            height: 200px;
+        }
+        /*.grid-item.big {
+            background-color: green;
+            width: 440px;
+            height: 310px;
+        }*/
+        
+        
+       /*@media only screen and (max-width: 600px) {
+            .grid-item {
+                width: 90%;
+            }
+        }*/
+        
+        
+    </style>
+	
+	<div class="grid-cont">
+    	<div class="grid">
+    	    <div class="grid-item"></div>
+    	    <div class="grid-item"></div>
+    	    <div class="grid-item big"></div>
+    	    <div class="grid-item"></div>
+    	    <div class="grid-item"></div>
+    	    <div class="grid-item big"></div>
+    	    <div class="grid-item big"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+    	    <!--
+            <div class="grid-item"><img src="img/img2.png" /></div>
+            <div class="grid-item"><img src="img/img1.png" /></div>
+            <div class="grid-item"><img src="img/img3.png" /></div>
+            <div class="grid-item"><img src="img/img2.png" /></div>
+            <div class="grid-item"><img src="img/img1.png" /></div>
+            <div class="grid-item"><img src="img/img3.png" /></div>
+            <div class="grid-item"><img src="img/img2.png" /></div>
+            <div class="grid-item"><img src="img/img1.png" /></div>
+            <div class="grid-item"><img src="img/img3.png" /></div>
+            <div class="grid-item"><img src="img/img2.png" /></div>
+            <div class="grid-item"><img src="img/img1.png" /></div>
+            <div class="grid-item"><img src="img/img3.png" /></div>
+            -->
+        </div>
+	</div>
+	
+    <script src="../js/jquery.easing.1.3.js"></script>
+	<script src="../js/snippets.js"></script><!-- Scripts y funciones varias -->
+	
+	
+</body>
+</html>

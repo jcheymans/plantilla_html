@@ -185,7 +185,9 @@ function setSmoothScrolling(){ // Automaticamente setea todas las links #asi par
 		if(href && href.length>1){
 			if(href_nav(href)){
 				e.preventDefault();
-				scrollTo(href, 800);
+				scrollTo(href, 800, 0, function(){
+				    window.location.hash = href;
+				});
 			}
 		}
 	});
