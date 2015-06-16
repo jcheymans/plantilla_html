@@ -197,28 +197,42 @@ hr {
 .form1 .fila .field {
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
 	width: 44%;
-	width: calc(50% - 8px); /* 12 por los bordes, si no fuera 10 (la mitad del margen de en medio) */
+	width: calc(50% - 6px); /* 12 por los bordes, si no fuera 10 (la mitad del margen de en medio) */
 	margin-right: 12px;
 }
 .form1 .fila .field:last-child {
 	margin-right: 0;
-    width: calc(50% - 9px);
+    width: calc(50% - 6px);
 }
 .form1 .fila .field:first-child:last-child {
 	width: 100%;
 	margin-right: 0;
 }
-/* Aca falta hacer la parte de media queries y tambien para checkboxes, select combos, etc... ABarcar TODAS las posibilidaes en un formulario */
+
+.form1 .fila :first-child {
+    display: block;
+    float: left;
+}
+.form1 .fila :first-child:last-child {
+    display: block;
+    float: none;
+}
+
 
 .form1 .fila .styled:first-child:last-child {
     width: 100%;
 }
-.form1 .fila .styled {
-    width: calc(50% - 8px);
+.form1 .fila .styled:first-child {
+    width: calc(50% - 6px);
+    margin-right: 12px;
 }
 .form1 .fila .styled:last-child {
-    width: calc(50% - 9px);
+    width: calc(50% - 6px);
 }
+.form1 .fila .styled:first-child:last-child {
+    width: 100%;
+}
+
 
 
 div.styled { 
@@ -242,7 +256,7 @@ div.styled select {
     -webkit-appearance: none /* this is required for Webkit browsers */; 
     border:none; 
     box-shadow:none; 
-    padding: 0.65em; /* padding should be added to the select, not the div */
+    padding: 0.6em; /* padding should be added to the select, not the div */
 }
 div.styled::after {
 	z-index: 0;
