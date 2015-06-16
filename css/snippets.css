@@ -176,37 +176,33 @@ hr {
 
 /* FORMS */
 .field {
+    font-size: 17px;
 	border: 1px solid #d0d0d0;
 	background-color: #fff;
-	padding: 10px;
+	padding: 0.65em;
 }
 .field:focus {
 	border-color: #bbb;
 }
 .form1 {
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
 	position: relative;
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box; 
 }
 .form1 .fila {
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
 	width: 100%;
 	position: relative;
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box; 
-	margin-bottom: 20px;
+	margin-bottom: 0.8em;
 }
 .form1 .fila .field {
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
 	width: 44%;
-	width: calc(50% - 12px); /* 12 por los bordes, si no fuera 10 (la mitad del margen de en medio) */
-	margin-right: 20px;
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box; 
+	width: calc(50% - 8px); /* 12 por los bordes, si no fuera 10 (la mitad del margen de en medio) */
+	margin-right: 12px;
 }
 .form1 .fila .field:last-child {
 	margin-right: 0;
+    width: calc(50% - 9px);
 }
 .form1 .fila .field:first-child:last-child {
 	width: 100%;
@@ -214,27 +210,28 @@ hr {
 }
 /* Aca falta hacer la parte de media queries y tambien para checkboxes, select combos, etc... ABarcar TODAS las posibilidaes en un formulario */
 
+.form1 .fila .styled:first-child:last-child {
+    width: 100%;
+}
+.form1 .fila .styled {
+    width: calc(50% - 8px);
+}
+.form1 .fila .styled:last-child {
+    width: calc(50% - 9px);
+}
 
 
 div.styled { 
-	display: inline-block;
-	position: relative;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+    padding:0; margin:0;
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
     overflow:hidden; /* this hides the select's drop button */
-    padding:0; 
-    margin:0; 
-	font-size: 14px;
-    /*background: white url(formelements-select.png) no-repeat bottom right; */
-    /* this is the new drop button, in image form */
-    width:12em; 
-    /*border-radius:2px; */
-    /*box-shadow: 0 1px 3px rgba(0,0,0,0.2); */
+    width: 100%;
     border: solid 1px #ccc; 
-    padding: 1px;
     background-color: #fff;
     
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;    
-	box-sizing: border-box; 
 }
 div.styled select { 
 	position: relative;
@@ -245,7 +242,7 @@ div.styled select {
     -webkit-appearance: none /* this is required for Webkit browsers */; 
     border:none; 
     box-shadow:none; 
-    padding:0.3em 0.5em; /* padding should be added to the select, not the div */
+    padding: 0.65em; /* padding should be added to the select, not the div */
 }
 div.styled::after {
 	z-index: 0;
@@ -272,8 +269,10 @@ div.styled::after {
 .btn, .btn:visited {
     /*border-radius: 5px;*/
  	border: 0;
-    padding: 12px 35px;
-    font-size: 20px;
+ 	
+    padding: 9px 35px;
+    font-size: 16px;
+    
     font-weight: bold;
     text-decoration: none;
     /*margin: 20px;*/
@@ -294,10 +293,16 @@ div.styled::after {
 .btn:focus {
 	outline: none;
 }
+
 .btn.peq {
-  	padding: 10px 35px;
-  	font-size: 16px;
+    padding: 5px 22px;
+    font-size: 13px;
 }
+.btn.grande {
+    padding: 12px 35px;
+    font-size: 20px;
+}
+
 .azul, .azul:focus {
     background-color: #005475;
     box-shadow: 0px 5px 0px 0px #004661;
