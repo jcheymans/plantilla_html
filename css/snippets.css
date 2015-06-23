@@ -209,7 +209,7 @@ hr {
 	margin-right: 0;
 }
 
-.form1 .fila :first-child {
+.form1 .fila .field:first-child, .form1 .fila .styled:first-child {
     display: block;
     float: left;
 }
@@ -231,6 +231,33 @@ hr {
 }
 .form1 .fila .styled:first-child:last-child {
     width: 100%;
+}
+.form1 .fila > span {
+    margin-right: 12px;
+}
+.form1 .fila > label input[type=radio] {
+    top: 1px;
+    position: relative;
+    margin: 8px 8px 12px 5px;
+}
+.form1 .fila > label input[type=checkbox] {
+    position: relative;
+    top: 1px;
+    margin: 8px 8px 12px 0;
+}
+
+/* RESPONSIVE FORMS */
+@media only screen and (max-width: 500px) {
+    .form1 .fila {
+        margin-bottom: 0;
+    }
+    .form1 .fila .styled, .form1 .fila .field {
+        margin-bottom: 0.8em;
+        width: 100%;
+    }
+    .form1 .fila .field:last-child, .form1 .fila .styled:first-child, .form1 .fila .styled:last-child {
+        width: 100%;
+    }
 }
 
 
@@ -295,8 +322,9 @@ div.styled::after {
     display: inline-block;
 }
 .btn:active {
-    transform: translate(0px, 5px);
-    -webkit-transform: translate(0px, 5px);
+    /*transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);*/
+    top: 1px;
     box-shadow: 0px 1px 0px 0px;
     outline: none;
     text-decoration: none;
@@ -319,21 +347,13 @@ div.styled::after {
 
 .azul, .azul:focus {
     background-color: #005475;
-    box-shadow: 0px 5px 0px 0px #004661;
+    box-shadow: 0px 4px 0px 0px #004661;
     color: #fff;
 }
 .azul:hover {
     background-color: #005b77;
 }
 
-.azul-claro, .azul-claro:focus {
-    background-color: #0090cb;
-    box-shadow: 0px 5px 0px 0px #007cad;
-    color: #fff;
-}
-.azul-claro:hover {
-    background-color: #0598c6;
-}
 
 
 
