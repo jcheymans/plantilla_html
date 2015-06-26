@@ -7,6 +7,7 @@ $(document).ready(function(){
 	// Dejarlas asi (llamadas desde aca)
 	_setBrowser();
 	setSmoothScrolling();
+	setForms();
 	
 	// Llamarlas desde otro archivo
 	//initICheck();
@@ -19,6 +20,16 @@ $(document).ready(function(){
 	
 });
 
+
+function setForms(){
+    if($.fn.datepicker) {
+        $(".calendar, .datepicker").datepicker({
+            changeMonth: true,
+            changeYear: true,
+            dateFormat: 'dd-mm-yy'
+        });
+    }
+}
 
 function setJScroll(){
 	// Mas ejemplos: http://jscroll.com/
